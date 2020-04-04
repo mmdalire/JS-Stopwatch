@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Background image*/
+body {
+    background: url('images/coding.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: hidden;
+}
+
+h3 {
+    font-size: 16px;
+    color: gray;
+}
+
+/*Logo*/
+#logo {
+    margin-right: 20px;
+    font-size: 90px;
+    color: 	rgb(204,204,0);
+}
+
+.container {
+    width: 700px;
+    background-color: rgb(226, 226, 226);
+    box-shadow: 15px 13px 5px 0px rgba(71, 71, 71, 0.75); 
+    margin: 50px auto;
+    padding: 10px;
+}
+
+/*Header part*/
+.container__header {
+    display: flex;
+}
+
+.container__title {
+    margin-top: 5px;
+}
+
+/*Stopwatch part*/
+.container__stopwatch {
+    display: block;
+    font-size: 72px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/*Buttons*/
+button {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+button#control-buttons__start-stop {
+    background-color: transparent;
+    border: solid 3px rgb(0, 231, 0);
+    color: rgb(0, 231, 0);
+}
+
+button#control-buttons__start-stop:hover {
+    background-color: rgb(0, 231, 0);
+    color: white;
+    transition: 0.3s all;
+}
+
+button#control-buttons__reset-lap {
+    background-color: transparent;
+    border: solid 3px rgba(71, 71, 71);
+    color: rgba(71, 71, 71);
+}
+
+button#control-buttons__reset-lap:hover {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    transition: 0.3s all;
+}
+
+.container__control-buttons {
+    display: block;
+    text-align: center;
+}
+
+/*Lap display*/
+.container__display-lap {
+    margin: 30px 20px 0 20px;
+    font-size: 30px;
+    overflow-y: auto;
+}
+
+.display-lap__new-lap {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: solid 1px gray;
+}
